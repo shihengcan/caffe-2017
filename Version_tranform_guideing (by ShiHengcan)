@@ -1,0 +1,32 @@
+step1: Copy all files in following folders to new caffe
+       skip files with the same name in two different caffes:
+
+            ./include/caffe/
+            ./src/caffe/
+ 
+
+step1.1: Copy "sigmoid_cross_entropy_loss_layer" in following folders to new caffe
+         replace the file with the same name in the new caffe:
+
+            ./include/caffe/
+            ./src/caffe/ 
+
+
+step2: Copy the "serial numbers" and "parameters" of new layers in following files
+       and paste them to the corresponding files in new caffe:
+
+            ./src/caffe/proto/caffe.proto
+
+
+step3: Copy code snippets signed by "jay add" in following files
+       and paste them to the corresponding files in new caffe:
+
+            ./include/caffe/blob.hpp
+            ./src/caffe/blob.cpp
+
+
+step4: Copy code snippets signed by "shihengcan add"
+       and such code ' #include "caffe/data_reader.hpp" ' in following files
+       and paste them to the corresponding files in new caffe:
+
+            ./src/caffe/util/blocking_queue.cpp
